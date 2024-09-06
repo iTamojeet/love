@@ -1,3 +1,3 @@
 Visit the app here :- https://willyoube.streamlit.app/
 <br/>
-**This app is made ade deployed using streamlit**
+**This app is made and deployed using streamlit**
