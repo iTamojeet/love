@@ -11,8 +11,8 @@ input_container = st.container()
 with input_container:
     her_name = st.text_input("Enter your first name please: ").title()
 
-    if her_name.lower() == "annesha":
-        st.subheader("Hello Annesha, you light up my world! You're the BEST 💫")
+    if her_name():
+        st.subheader(f"Hello {her_name}, you light up my world! You're the BEST 💫")
     else:
         st.subheader(f"Hello {her_name}, this Dino doesn't like strangers. Sorry! 😊")
 
