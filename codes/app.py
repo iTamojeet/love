@@ -11,7 +11,7 @@ input_container = st.container()
 with input_container:
     her_name = st.text_input("Enter your first name please: ").title()
 
-    if her_name():
+    if her_name:
         st.subheader(f"Hello {her_name}, you light up my world! You're the BEST 💫")
     else:
         st.subheader(f"Hello {her_name}, this Dino doesn't like strangers. Sorry! 😊")
@@ -40,7 +40,7 @@ with reasons_container:
     ]
 
     st.write(f"Here are {num_reasons} reasons why I love *YOU* alot:")
-    for i in range(num_reasons):
+    for i in range(min(num_reasons, len(reasons))):
         st.write(f"{i + 1}. {reasons[i]}")
 
 date_container = st.container()
